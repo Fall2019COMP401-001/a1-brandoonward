@@ -10,7 +10,7 @@ public class A1Example {
 		// so that you can confirm that it is 10.0 or higher.
 		
 		// System.out.println("Your Java version: " + System.getProperty("java.version"));
-		
+		// more
 		// Set up scanner object to read space-separated values
 		// from console input
 		
