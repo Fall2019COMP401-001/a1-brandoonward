@@ -61,7 +61,7 @@ public class A1Novice {
 			
 		}
 		for (int k=0; k<count; k++) {
-		System.out.print(firstName[k].charAt(0) + "." + lastName[k] + ": " + realTotal[k] + "\r\n");
+		System.out.print(firstName[k].charAt(0) + "." + lastName[k] + ": " + String.format("%.2f", realTotal[k]) + "\r\n");
 		}
 		// closing the scanner as it is no longer used.
 		scan.close();
