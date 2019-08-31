@@ -92,7 +92,7 @@ public class A1Adept {
 	//function for findMin.
 	static int findMin(double[] vals) {
 		
-		double currentMin = 0;
+		double currentMin = vals[0];
 		
 		int i=0;
 		int z=0;
