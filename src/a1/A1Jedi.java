@@ -42,9 +42,10 @@ public class A1Jedi {
 			firstName[i] = scan.next();
 			lastName[i] = scan.next();
 			int numOfItems = scan.nextInt();
-			
+			int[] customerCheck = new int[groceries.length];
 			//creating a for loop inside tht will ask for the quantity and name of a specific item
 			for (int n=0; n<numOfItems; n++) {
+				
 				int quantity = scan.nextInt();
 				String productName = scan.next();
 				
@@ -54,9 +55,13 @@ public class A1Jedi {
 					for (int k=0; k<groceries.length; k++) {
 						if (productName.equals(groceries[k])) {
 							customersQ[k] = customersQ[k] + quantity;
-							customers[k]= customers[k] + 1;
+							if (customerCheck[k] == 0 && productName.equals(groceries[k])) {
+								customers[k] = customers[k] +1;
+								customerCheck[k]++;
+							}
 				}
 			}
+					
 		}
 			i++;
 	}
